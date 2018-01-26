@@ -1,4 +1,4 @@
-## General Security Developer guide - Indonesia
+## General Security Development guide - Indonesia
 
 > Poin poin dibawah ini masih dalam urutan acak
 

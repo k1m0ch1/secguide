@@ -5,7 +5,7 @@ This documentation is about practical security guide for web developer who inten
 
 ### Table of Content
 
-1. [General Security Guide](general-security-developer-guide-id.md)
-2. JS Security Guide
+1. [General Security Guide](general-security-development-guide-id.md)
+2. [JS Security Guide](js-security-development-guide-id.md)
 4. Operation Security Guide
 3. Security SDLC (Software Development Life Cycle)
