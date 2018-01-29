@@ -6,6 +6,6 @@ Dokumentasi ini diperuntukan untuk web developer dalam maksud untuk mempatch lub
 ### Table of Content
 
 1. [General Security Guide](general-security-development-guide-id.md)
-2. [JS Security Guide](js-security-development-guide-id.md)
+2. JS Security Guide
 4. Operation Security Guide
 3. Security SDLC (Software Development Life Cycle)
