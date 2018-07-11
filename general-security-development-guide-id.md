@@ -4,32 +4,32 @@
 
 Legend :
 :zap: : Level Mudah untuk implementasi 
-:ocean: : Level Mudah untuk implementasi 
+:ocean: : Level Biasa untuk implementasi 
 :pray: : Level Susah untuk implementasi
 note, level dilihat dari developer dengan minim pengalaman security dev
 
 ## Web Server
 
-- [ ] Enable Header `X-XSS-Protection`, best config : "X-XSS-Protection: 1; mode=block"
-- [ ] Enable Header `X-Frame-Options`, best config : "X-Frame-Options "SAMEORIGIN" always"
-- [ ] Enable Header `X-Content-Type-Options`, best config : "X-Content-Type-Options "nosniff" always"
-- [ ] Enable Header `Content-Security-Policy`
-- [ ] Enable Header `Referrer-Policy`
-- [ ] Untuk konfigurasi SSL gunakan `TLS v1`, `TLS v1.1` dan `TLS v1.2`
-- [ ] Jangan gunakan `TLS v3`
-- [ ] Jangan remote SSH Login menggunakan root 
-- [ ] Batasi besar file pada saat upload
-- [ ] Selalu periksa direktori file upload tidak ada file yang mencurigakan ( bisa pake backdoor scanner https://github.com/RomelSan/website-findbackdoor atau https://github.com/djeraseit/PHP-backdoor-detector simple tapi powerfull )
-- [ ] Matikan Directory Listing
-- [ ] Disable akses public `robot.txt` (jika dibutuhkan)
-- [ ] Disable X-powered-by web server
+- [ ] :zap: Enable Header `X-XSS-Protection`, best config : "X-XSS-Protection: 1; mode=block"
+- [ ] :zap: Enable Header `X-Frame-Options`, best config : "X-Frame-Options "SAMEORIGIN" always"
+- [ ] :zap: Enable Header `X-Content-Type-Options`, best config : "X-Content-Type-Options "nosniff" always"
+- [ ] :zap: Enable Header `Content-Security-Policy`
+- [ ] :zap: Enable Header `Referrer-Policy`
+- [ ] :zap: Untuk konfigurasi SSL gunakan `TLS v1`, `TLS v1.1` dan `TLS v1.2`
+- [ ] :zap: Jangan gunakan `TLS v3`
+- [ ] :zap: Jangan remote SSH Login menggunakan root 
+- [ ] :zap: Batasi besar file pada saat upload
+- [ ] :ocean: Selalu periksa direktori file upload tidak ada file yang mencurigakan ( bisa pake backdoor scanner https://github.com/RomelSan/website-findbackdoor atau https://github.com/djeraseit/PHP-backdoor-detector simple tapi powerfull )
+- [ ] :ocean: Matikan Directory Listing
+- [ ] :zap: Disable akses public `robot.txt` (jika dibutuhkan)
+- [ ] :pray: Disable X-powered-by web server
 
 ## Development Application
 
-- [ ] Jangan gunakan GET method untuk mengirimkan data yang sensitif
-- [ ] Hapus/ Matikan Experiment plugin
-- [ ] Segala resource yang berhubungan dengan data sensitif, seperti data pesanan, jurnal transaksi ataupun reedem voucher, cek terlebih dahulu kevalidan user nya real atau tidak. 
-- [ ] Pastikan tidak ada file backup (`.bak`) disetiap file development
+- [ ] :zap:Jangan gunakan GET method untuk mengirimkan data yang sensitif
+- [ ] :zap: Hapus/ Matikan Experiment plugin
+- [ ] :ocean: Segala resource yang berhubungan dengan data sensitif, seperti data pesanan, jurnal transaksi ataupun reedem voucher, cek terlebih dahulu kevalidan user nya real atau tidak. 
+- [ ] :zap: Pastikan tidak ada file backup (`.bak`) disetiap file development
 - [ ] Tidak membuat file archive berisi backup program yang dapat di akses secara publik
 - [ ] Hapus Routes yang ga dipake (menghindari routes scanner oleh hacker)
 - [ ] HTML input type autocomplete=off
