@@ -2,7 +2,7 @@
 
 > Poin poin dibawah ini masih dalam urutan acak
 
-Legend :
+### Legend :
 - :zap: : Level Mudah untuk implementasi 
 - :ocean: : Level Biasa untuk implementasi 
 - :pray: : Level Susah untuk implementasi
@@ -19,7 +19,7 @@ note, level dilihat dari developer dengan minim pengalaman security dev
 - [ ] :zap: Jangan gunakan `TLS v3`
 - [ ] :zap: Jangan remote SSH Login menggunakan root 
 - [ ] :zap: Batasi besar file pada saat upload
-- [ ] :ocean: Selalu periksa direktori file upload tidak ada file yang mencurigakan ( bisa pake backdoor scanner https://github.com/RomelSan/website-findbackdoor atau https://github.com/djeraseit/PHP-backdoor-detector simple tapi powerfull )
+- [ ] :ocean: Selalu periksa direktori file upload tidak ada file yang mencurigakan ( bisa menggunakan backdoor scanner https://github.com/RomelSan/website-findbackdoor atau https://github.com/djeraseit/PHP-backdoor-detector simple tapi powerfull ) atau bisa scan menggunakan anti virus
 - [ ] :ocean: Matikan Directory Listing
 - [ ] :zap: Disable akses public `robot.txt` (jika dibutuhkan)
 - [ ] :pray: Disable X-powered-by web server
@@ -31,7 +31,7 @@ note, level dilihat dari developer dengan minim pengalaman security dev
 - [ ] :ocean: Segala resource yang berhubungan dengan data sensitif, seperti data pesanan, jurnal transaksi ataupun reedem voucher, cek terlebih dahulu kevalidan user nya real atau tidak. 
 - [ ] :zap: Pastikan tidak ada file backup (`.bak`) disetiap file development
 - [ ] :zap: Tidak membuat file archive berisi backup program yang dapat di akses secara publik
-- [ ] :zap: Hapus Routes yang ga dipake (menghindari routes scanner oleh hacker)
+- [ ] :zap: Hapus Routes yang tidak digunakan (menghindari routes scanner oleh hacker)
 - [ ] :zap: HTML input type autocomplete=off
 - [ ] :zap: Error handling tidak menampilkan pesan debug pada production
 
@@ -60,7 +60,7 @@ note, level dilihat dari developer dengan minim pengalaman security dev
 
 - [ ] :zap: Selalu update versi wordpress
 - [ ] :zap: Selalu update plugin yang terinstall
-- [ ] :zap: Hapus Plugin yang sudah tidak di dukung
+- [ ] :zap: Hapus Plugin yang sudah tidak di dukung, gunakan alternatif jika sangat di perlukan
 - [ ] :zap: Best Security Wordpress Plugin ( https://goo.gl/MbBRZL )
 - [ ] :ocean: Wordpress vulnerability scanner (paling mudah untuk cari kelemahan)
 - [ ] :zap: Follow hashtag #wpvulndb di twitter untuk update vulnerable (https://twitter.com/hashtag/wpvulndb)
@@ -69,6 +69,13 @@ note, level dilihat dari developer dengan minim pengalaman security dev
 - [ ] :zap: Gunakan email untuk login, jangan pake username
 - [ ] :ocean: Custom error message ( https://goo.gl/q77QUb )
 - [ ] :ocean: Disable WP REST API jika tidak di gunakan (https://wordpress.org/plugins/disable-json-api/)
+- [ ] :zap: jangan buat username dengan nama admin
+- [ ] :zap: pertimbangkan kembali jika menginginkan install banyak plugin
+- [ ] :zap: transfer file gunakan SFTP daripada FTP
+- [ ] :zap: Jika FTP tidak gunakan, tambah `define('FS_METHOD','direct');` pada line code file wp-config.php
+- [ ] :zap: Jika tidak akan melakukan edit file pada theme editor, tambahkan line code ini `define('DISALLOW_FILE_EDIT',true);` pada file wp-config.php
+- [ ] :zap: siapkan backup versi build wordpress yang "aman"
+- [ ] :zap: Untuk wordpress, disable php execution jika tidak digunakan
 
 
 ## Password
