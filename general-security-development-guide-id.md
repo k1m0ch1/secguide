@@ -17,12 +17,15 @@ note, level dilihat dari developer dengan minim pengalaman security dev
 - [ ] :zap: Enable Header `Referrer-Policy`
 - [ ] :zap: Untuk konfigurasi SSL gunakan `TLS v1`, `TLS v1.1` dan `TLS v1.2`
 - [ ] :zap: Jangan gunakan `TLS v3`
-- [ ] :zap: Jangan remote SSH Login menggunakan root 
+- [ ] :zap: Jangan remote SSH Login menggunakan root
+- [ ] :zap: Matikan PostgreSql/MySql Remote Login jika tidak digunakan.
 - [ ] :zap: Batasi besar file pada saat upload
 - [ ] :ocean: Selalu periksa direktori file upload tidak ada file yang mencurigakan ( bisa menggunakan backdoor scanner https://github.com/RomelSan/website-findbackdoor atau https://github.com/djeraseit/PHP-backdoor-detector simple tapi powerfull ) atau bisa scan menggunakan anti virus
 - [ ] :ocean: Matikan Directory Listing
 - [ ] :zap: Disable akses public `robot.txt` (jika dibutuhkan)
+- [ ] :zap: Disable akses public ke direktori `.git` pada server, atau jika bisa hapus terlebih dahulu direktori `.git` jika sudah di push ke server.
 - [ ] :pray: Disable X-powered-by web server
+- [ ] :pray: Gunakan IDS/IPS untuk mengetahui serta memblokir Serangan Aktif yang sedang terjadi.
 
 ## Application Development
 
