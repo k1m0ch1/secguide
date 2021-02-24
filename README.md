@@ -1,11 +1,10 @@
-# Best Practice Security Guide for web developer
+# Developer Security Guideline
 
-This documentation is about practical security guide for web developer who intend to patch up the environment of web apps
+This documentation is about practical security guide for  developer who intend to patch up the environment of apps
 
 
 ### Table of Content
 
 1. [General Security Guide](general-security-development-guide-id.md)
-2. JS Security Guide
-4. Operation Security Guide
-3. Security SDLC (Software Development Life Cycle)
+2. [Secure the Web Apps](docs/web-apps.md)
+3. [Secure the 2FA](docs/2FA.md)
